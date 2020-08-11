@@ -22,7 +22,7 @@ On the right, you have all the 4 alternatives to select from, so you can always 
 smart-pants tech and eliminate those less likely to be the answer on your mind.
 
 
-## Architecture:
+## Architecture
 
 The interface boilerplate is described in this mindmap below:
 ![ui-mindmap 10](images/interface-schematic.png)
