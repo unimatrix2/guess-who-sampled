@@ -1,0 +1,119 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<design version="1.18.0">
+ <color r="186" b="182" g="189"/>
+ <edge-color r="0" b="0" g="0"/>
+ <edge-width>2000</edge-width>
+ <text-size>11000</text-size>
+ <corner-radius>5000</corner-radius>
+ <graph>
+  <node index="0" h="75000" x="115686" y="-351960" w="200000">
+   <text>          Interface</text>
+   <color r="170" b="255" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="1" h="75000" x="-170588" y="-164950" w="200000">
+   <text>      upper section</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="3" h="75000" x="322549" y="-202205" w="200000">
+   <text>        main section</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="4" h="75000" x="-508823" y="-325735" w="200000">
+   <text>       now playing</text>
+   <color r="170" b="0" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="5" h="75000" x="-514705" y="-17892" w="200000">
+   <text>       Listen on YT</text>
+   <color r="170" b="0" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="6" h="75000" x="73529" y="-54166" w="200000">
+   <text>              Left</text>
+   <color r="170" b="0" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="7" h="75000" x="-75490" y="163480" w="200000">
+   <text>    Play/Stop sound</text>
+   <color r="170" b="0" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="8" h="75000" x="548039" y="-311029" w="200000">
+   <text>              Right</text>
+   <color r="255" b="0" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="9" h="75000" x="586274" y="-191421" w="200000">
+   <text>           Answers</text>
+   <color r="255" b="0" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="10" h="75000" x="436274" y="-65931" w="200000">
+   <text>             Alt 1</text>
+   <color r="85" b="255" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="11" h="75000" x="640196" y="-66911" w="200000">
+   <text>              Alt 2</text>
+   <color r="85" b="255" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="12" h="75000" x="489215" y="35049" w="200000">
+   <text>               Alt 3</text>
+   <color r="85" b="255" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="13" h="75000" x="693137" y="35049" w="200000">
+   <text>              Alt 4</text>
+   <color r="85" b="255" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="14" h="75000" x="219607" y="163480" w="200000">
+   <text>              Lives</text>
+   <color r="170" b="0" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <edge index1="1" index0="0" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="3" index0="0" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="4" index0="1" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="5" index0="1" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="6" index0="3" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="8" index0="3" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="7" index0="6" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="14" index0="6" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="9" index0="8" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="10" index0="9" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="11" index0="9" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="12" index0="9" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="13" index0="9" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+ </graph>
+</design>
