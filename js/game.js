@@ -82,26 +82,102 @@ function newGameLives() {
     mainLeft.appendChild(lives);
 }
 
+function currentAnswer(level) {
+    const answer = document.createElement('button');
+    answer.setAttribute('id', 'alt');
+    switch(level) {
+        case 1:
+            answer.innerText =  'Cypress Hill - Insane in the Brain';
+            break;
+        case 2:
+            answer.innerText = 'Journey - Separate Ways';
+            break;
+        case 3:
+            answer.innerText = 'Eminem - White America';
+            break;
+    }
+    return answer;
+}
+
+function getAlternatives() {
+    const mainRight = document.getElementById('right');
+    const alt1 = document.createElement('button');
+    const alt2 = document.createElement('button');
+    const alt3 = document.createElement('button');
+    alt1.setAttribute('id', 'alt');
+    alt2.setAttribute('id', 'alt');
+    alt3.setAttribute('id', 'alt');
+    while (alt1.innerText === alt2.innerText ||
+        alt1.innerText === alt3.innerText ||
+        alt2.innerText === alt3.innerText) {
+            alt1.innerText = alternatives[Math.floor(Math.random() * (alternatives.length - 1) ) + 1];
+            alt2.innerText = alternatives[Math.floor(Math.random() * (alternatives.length - 1) ) + 1];
+            alt3.innerText = alternatives[Math.floor(Math.random() * (alternatives.length - 1) ) + 1];
+        }
+    return [alt1, alt2, alt3];
+}
+
+function writeAlts(level) {
+    const mainRight = document.getElementById('right');
+    const alt1 = levels[level].alternatives[0];
+    const alt2 = levels[level].alternatives[1];
+    const alt3 = levels[level].alternatives[2];
+    const alt4 = levels[level].answer;
+    alt1.setAttribute('class', 'wrong');
+    alt2.setAttribute('class', 'wrong');
+    alt3.setAttribute('class', 'wrong');
+    alt4.setAttribute('class', 'correct');
+    alt1.style.order = 0;
+    alt2.style.order = 0;
+    alt3.style.order = 0;
+    alt4.style.order = 0;
+    if (alt1.style.order === alt2.style.order ||
+        alt1.style.order === alt3.style.order ||
+        alt1.style.order === alt4.style.order ||
+        alt2.style.order === alt3.style.order ||
+        alt2.style.order === alt4.style.order ||
+        alt3.style.order === alt4.style.order) {
+            alt1.style.order = Math.floor(Math.random() * (4 - 1) ) + 1;
+            alt2.style.order = Math.floor(Math.random() * (4 - 1) ) + 1;
+            alt3.style.order = Math.floor(Math.random() * (4 - 1) ) + 1;
+            alt4.style.order = Math.floor(Math.random() * (4 - 1) ) + 1;
+        }
+    mainRight.appendChild(alt1);
+    mainRight.appendChild(alt2);
+    mainRight.appendChild(alt3);
+    mainRight.appendChild(alt4);
+}
+
+const alternatives = ['Lady Gaga - Poker Face', 'Marilyn Manson - Mwchanical Animals', 'Pink Floyd - Money', 'The Who - Who Are You',
+'Black Sabbath - Iron Man', 'Beyoncé - Run the World', 'Rihanna - S&M', 'Murderdolls - White Wedding', 'Black Eyed Peas - Meet me Halfway',
+'Alice Cooper - Million Dollar Babies', 'Benny Benassi - Satisfaction', 'Wu Tang Clan - C.R.E.A.M.', 'Blind Guardian - Mirror Mirror', 
+'Bob Marley - Jamming', 'Bon Jovi - Living on a Prayer', 'Skrillex - Bangarang', 'Bonetrips - Yallah', 'Matstubs - Spirits', 'Com Truise - VHS Sex', 
+'Criolo - Vasilhame', 'Datsik - Bonafide Hustler', 'deadmau5 - Some Chords', 'Dio - Holy Diver', 'Doctor P - Big Boss', 'Flux Pavilion - Bass Canon', 
+'Eminem - Lose Yourself', 'Everlast - Saving Grace', 'Focus - Hocus Pocus'];
+
 const levels = [
     {
         thumb: getThumb(1),
         currentSong: currentSong(1),
         currentLink: currentLink(1),
         currentFile: currentFile(1),
-        answer: 'PLACEHOLDER',
+        answer: currentAnswer(1),
+        alternatives: getAlternatives(),
     },
     {
         thumb: getThumb(2),
         currentSong: currentSong(2),
         currentLink: currentLink(2),
         currentFile: currentFile(2),
-        answer: 'PLACEHOLDER',
+        answer: currentAnswer(2),
+        alternatives: getAlternatives(),
     },
     {
         thumb: getThumb(3),
         currentSong: currentSong(3),
         currentLink: currentLink(3),
         currentFile: currentFile(3),
-        answer: 'PLACEHOLDER',
+        answer: currentAnswer(3),
+        alternatives: getAlternatives(),
     }
 ];

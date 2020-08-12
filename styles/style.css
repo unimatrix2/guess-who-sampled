@@ -111,10 +111,12 @@ body {
     cursor: pointer;
     border-radius: 10px;
     border-color: darkgray;
+    margin-left: 96%;
 }
 
 #start-game:hover {
     border-color: gray;
+    color: darkgray;
 }
 
 #right {
@@ -133,10 +135,13 @@ body {
     border-radius: 10px;
     border-color: darkgray;
     cursor: pointer;
+    font-size: 2rem;
+    color: gray;
 }
 
 #alt:hover {
     border-color: gray;
+    color: darkgray;
 }
 
 #lives {
@@ -164,10 +169,3 @@ body {
     color: gray;
     cursor: pointer;
 }
-
-/* #play:active {
-    border: none;
-}
-#play:focus {
-    border: none;
-} */

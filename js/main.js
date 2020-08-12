@@ -13,7 +13,7 @@ function updateGame(level) {
 
 function clearUI() {
     right.innerHTML = '';
-    left.innerHTML = '<i class="fab fa-youtube fa-10x"></i>';
+    left.innerHTML = '';
     mainLeft.innerHTML = '';
     mainRight.innerHTML = '';
 }
@@ -27,20 +27,20 @@ function startGame() {
     for (let i = 0; i < levels.length; i++) { // This loop provides that only existing levels will be selected
         levelArr.push(i);
     }
-    updateGame(selectLevel(0, levelArr.length));
+    let currentLevel = selectLevel(0, levelArr.length);
+    left.innerHTML = '<i class="fab fa-youtube fa-10x"></i>';
+    updateGame(currentLevel);
     newGameLives();
+    writeAlts(currentLevel);
+
 
 }
 
 function newGame() {
     clearUI();
     startGame();
-
 }
 
-
-/* updateGame(2); // test invocation, just to see if everything is working fine
-newGameLives(); */
 
 
 
