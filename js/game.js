@@ -6,7 +6,7 @@ function getThumb(level) {
     return thumb;
 }
 
-function currentSong(level) {
+function currentSong(level) {   
     const current = document.createElement('span');
     current.setAttribute('id', 'current-song');
     switch(level) {
@@ -15,6 +15,9 @@ function currentSong(level) {
             break;
         case 2:
             current.innerText = 'Lil Wayne - Secret Weapon';
+            break;
+        case 3:
+            current.innerText = 'Blu and Exile - Blue as I Can Be';
             break;
     }
     return current;
@@ -31,6 +34,10 @@ function currentLink(level) {
             break;
         case 2:
             text.setAttribute('href', 'https://www.youtube.com/watch?v=tCpMwEdZFiI');
+            break;
+        case 3:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=N40NewlFY5I');
+            break;
     }
     return text;
 }
@@ -49,6 +56,9 @@ function currentFile(level) {
         case 2:
             audio.src = 'songs/secretweapon.mp3';
             break;
+        case 3:
+            audio.src = 'songs/blueasicanget.mp3';
+            break;
 
     }
     button.appendChild(audio);
@@ -57,7 +67,9 @@ function currentFile(level) {
 }
 
 function newGameLives() {
-    const lives = document.getElementById('lives');
+    const mainLeft = document.getElementById('left');
+    const lives = document.createElement('div');
+    lives.setAttribute('id', 'lives');
     const life = document.createElement('i');
     const life2 = document.createElement('i');
     const life3 = document.createElement('i');
@@ -67,6 +79,7 @@ function newGameLives() {
     lives.appendChild(life);
     lives.appendChild(life2);
     lives.appendChild(life3);
+    mainLeft.appendChild(lives);
 }
 
 const levels = [
@@ -82,6 +95,13 @@ const levels = [
         currentSong: currentSong(2),
         currentLink: currentLink(2),
         currentFile: currentFile(2),
+        answer: 'PLACEHOLDER',
+    },
+    {
+        thumb: getThumb(3),
+        currentSong: currentSong(3),
+        currentLink: currentLink(3),
+        currentFile: currentFile(3),
         answer: 'PLACEHOLDER',
     }
 ];
