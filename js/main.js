@@ -3,27 +3,26 @@ const left = document.getElementById('yt-link');
 const mainLeft = document.getElementById('left');
 const mainRight = document.getElementById('right');
 const startButton = document.getElementById('start-game');
-const levelArr = [];
-for (let i = 0; i < levels.length; i++) { // This loop provides that only existing levels will be selected
-    levelArr.push(i);
-}
-let currentLevel = selectLevel(0, levelArr.length);
+
+let currentLevel = selectLevel(0, levels.length);
+let lastLevel = JSON.parse(JSON.stringify(currentLevel));
 
 let bestScore = 0;
-const levelsPlayed = [];
 const currentGameLives = [];
 
 const score = document.createElement('div');
 score.setAttribute('id', 'score');
 score.innerHTML = `<span id="score-text">Score: ${bestScore}</span>`;
 
-function updateGame(level) {
-    right.appendChild(levels[level].thumb);
-    right.appendChild(levels[level].currentSong);
+function updateGame() {
+    right.appendChild(levels[currentLevel].thumb);
+    right.appendChild(levels[currentLevel].currentSong);
     left.innerHTML = '<i class="fab fa-youtube fa-10x"></i>';
-    left.appendChild(levels[level].currentLink);
-    mainLeft.appendChild(levels[level].currentFile);
+    left.appendChild(levels[currentLevel].currentLink);
+    mainLeft.appendChild(levels[currentLevel].currentFile);
     mainRight.appendChild(score);
+    levels.splice(currentLevel, 1);
+    updateCurrentLevel();
 }
 
 function clearUI() {
@@ -33,14 +32,14 @@ function clearUI() {
     mainRight.innerHTML = '';
 }
 
-function played() {
-    levelsPlayed.push(currentLevel);
-    currentLevel = selectLevel(0, levelArr.length);
-    levelsPlayed.forEach(element => {
+function updateCurrentLevel() {
+    lastLevel = JSON.parse(JSON.stringify(currentLevel));
+    if (levels.length > 1) {
         do {
-            currentLevel = selectLevel(0, levelArr.length);
-        } while (currentLevel === element);
-    });
+            currentLevel = selectLevel(0, levels.length);
+        } while (currentLevel === lastLevel);
+    }
+    currentLevel = 0;
 }
 
 function updateScore() {
@@ -53,11 +52,10 @@ function selectLevel(min, max) {
 }
 
 function startGame() {
-    updateGame(currentLevel);
+    writeAlts();
+    updateGame();
     newGameLives();
     nextLives();
-    writeAlts(currentLevel);
-    played();
     
 }
 

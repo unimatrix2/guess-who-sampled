@@ -1,3 +1,4 @@
+// Data structure functions
 
 function getThumb(level) {
     const thumb = new Image();
@@ -66,6 +67,42 @@ function currentFile(level) {
 
 }
 
+function getAlternatives() {
+    const alt1 = document.createElement('button');
+    const alt2 = document.createElement('button');
+    const alt3 = document.createElement('button');
+    alt1.setAttribute('id', 'alt');
+    alt2.setAttribute('id', 'alt');
+    alt3.setAttribute('id', 'alt');
+    while (alt1.innerText === alt2.innerText ||
+        alt1.innerText === alt3.innerText ||
+        alt2.innerText === alt3.innerText) {
+            alt1.innerText = alternatives[Math.floor(Math.random() * (alternatives.length - 1) ) + 1];
+            alt2.innerText = alternatives[Math.floor(Math.random() * (alternatives.length - 1) ) + 1];
+            alt3.innerText = alternatives[Math.floor(Math.random() * (alternatives.length - 1) ) + 1];
+        }
+    return [alt1, alt2, alt3];
+}
+
+function currentAnswer(level) {
+    const answer = document.createElement('button');
+    answer.setAttribute('id', 'alt');
+    switch(level) {
+        case 1:
+            answer.innerText =  'Cypress Hill - Insane in the Brain';
+            break;
+        case 2:
+            answer.innerText = 'Journey - Separate Ways';
+            break;
+        case 3:
+            answer.innerText = 'Eminem - White America';
+            break;
+    }
+    return answer;
+}
+
+// Life functions
+
 function newGameLives() {
     const life = document.createElement('i');
     const life2 = document.createElement('i');
@@ -87,46 +124,14 @@ function nextLives() {
 
 }
 
-function currentAnswer(level) {
-    const answer = document.createElement('button');
-    answer.setAttribute('id', 'alt');
-    switch(level) {
-        case 1:
-            answer.innerText =  'Cypress Hill - Insane in the Brain';
-            break;
-        case 2:
-            answer.innerText = 'Journey - Separate Ways';
-            break;
-        case 3:
-            answer.innerText = 'Eminem - White America';
-            break;
-    }
-    return answer;
-}
+// Game UI functions
 
-function getAlternatives() {
-    const alt1 = document.createElement('button');
-    const alt2 = document.createElement('button');
-    const alt3 = document.createElement('button');
-    alt1.setAttribute('id', 'alt');
-    alt2.setAttribute('id', 'alt');
-    alt3.setAttribute('id', 'alt');
-    while (alt1.innerText === alt2.innerText ||
-        alt1.innerText === alt3.innerText ||
-        alt2.innerText === alt3.innerText) {
-            alt1.innerText = alternatives[Math.floor(Math.random() * (alternatives.length - 1) ) + 1];
-            alt2.innerText = alternatives[Math.floor(Math.random() * (alternatives.length - 1) ) + 1];
-            alt3.innerText = alternatives[Math.floor(Math.random() * (alternatives.length - 1) ) + 1];
-        }
-    return [alt1, alt2, alt3];
-}
-
-function writeAlts(level) {
+function writeAlts() {
     const mainRight = document.getElementById('right');
-    const alt1 = levels[level].alternatives[0];
-    const alt2 = levels[level].alternatives[1];
-    const alt3 = levels[level].alternatives[2];
-    const alt4 = levels[level].answer;
+    const alt1 = levels[currentLevel].alternatives[0];
+    const alt2 = levels[currentLevel].alternatives[1];
+    const alt3 = levels[currentLevel].alternatives[2];
+    const alt4 = levels[currentLevel].answer;
     alt1.setAttribute('onclick', 'removeLife()');
     alt2.setAttribute('onclick', 'removeLife()');
     alt3.setAttribute('onclick', 'removeLife()');
@@ -156,20 +161,21 @@ function removeLife() {
     currentGameLives.pop();
     setTimeout(() => {
         clearUI();
-        updateGame(currentLevel);
-        writeAlts(currentLevel);
+        writeAlts();
+        updateGame();
         nextLives();
-        played();
     }, 2000);
 }
 
 function nextLevel() {
-    clearUI();
-    updateGame(currentLevel);
-    writeAlts(currentLevel);
-    updateScore();
-    nextLives();
-    played();
+    setTimeout(() => {
+        clearUI();
+        writeAlts();
+        updateGame();
+        updateScore();
+        nextLives();
+
+    }, 2000);
 }
 
 const alternatives = ['Lady Gaga - Poker Face', 'Marilyn Manson - Mechanical Animals', 'Pink Floyd - Money', 'The Who - Who Are You',

@@ -44,6 +44,12 @@ nivel aleatorio</text>
    <color r="255" b="255" g="255"/>
    <text-color r="0" b="0" g="0"/>
   </node>
+  <node index="18" h="75000" x="144578" y="-461596" w="493000">
+   <text>writeAlerts() --> tijolo de codigo que add as alternativas na UI
+de forma aleatoria, em posicoes aleatorias</text>
+   <color r="255" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
   <edge index1="1" index0="0" arrow-mode="0" reversed="0">
    <text>invocar 1</text>
   </edge>
@@ -58,6 +64,9 @@ nivel aleatorio</text>
   </edge>
   <edge index1="17" index0="2" arrow-mode="0" reversed="0">
    <text>invocar 2</text>
+  </edge>
+  <edge index1="18" index0="2" arrow-mode="0" reversed="0">
+   <text>invocar 4</text>
   </edge>
   <edge index1="0" index0="16" arrow-mode="0" reversed="0">
    <text>clicl no botao de start</text>
