@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<design version="1.18.0">
+ <color r="186" b="182" g="189"/>
+ <edge-color r="0" b="0" g="0"/>
+ <edge-width>2000</edge-width>
+ <text-size>11000</text-size>
+ <corner-radius>5000</corner-radius>
+ <graph>
+  <node index="0" h="75000" x="-256198" y="-25619" w="251000">
+   <text>COMO FUNCIONAM OS NIVEIS</text>
+   <color r="255" b="0" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="3" h="75000" x="-802479" y="-311570" w="210000">
+   <text>levels (array de objetos)</text>
+   <color r="255" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="5" h="75000" x="-335537" y="-266942" w="351000">
+   <text>	         selectLevel
+(funçao p/ selecionar nivel aleatoriamente)</text>
+   <color r="255" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="6" h="75000" x="81818" y="-98657" w="200000">
+   <text>       currentLevel</text>
+   <color r="255" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="7" h="82000" x="-786776" y="-133057" w="269000">
+   <text>               updateGame
+(usa o currentLevel como indice
+                  de levels)</text>
+   <color r="255" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="8" h="75000" x="-786776" y="69743" w="200000">
+   <text>coloca o nivel no DOM</text>
+   <color r="255" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="9" h="75000" x="-787603" y="239359" w="201000">
+   <text>deleta o nivel da levels</text>
+   <color r="255" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="10" h="75000" x="-339669" y="239359" w="200000">
+   <text>updateCurrentLevel</text>
+   <color r="255" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <edge index1="6" index0="5" arrow-mode="0" reversed="0">
+   <text>retorna para</text>
+  </edge>
+  <edge index1="8" index0="7" arrow-mode="0" reversed="0">
+   <text>ao invocada</text>
+  </edge>
+  <edge index1="9" index0="8" arrow-mode="0" reversed="0">
+   <text>depois</text>
+  </edge>
+  <edge index1="10" index0="9" arrow-mode="0" reversed="0">
+   <text>depois invoca</text>
+  </edge>
+ </graph>
+</design>

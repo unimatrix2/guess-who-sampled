@@ -21,10 +21,19 @@ right below, so keep track of that!
 On the right, you have all the 4 alternatives to select from, so you can always use
 smart-pants tech and eliminate those less likely to be the answer on your mind.
 
+## Interface
 
-## Architecture
+Here you can see the interface and what each part does.
+On the right you have the name of the song that's playing,
+the play button, and your lifes. On the left you have the link to the full song, 
+the possible answers and your current score. When you click an answer, 
+it will turn either green or red, and you'll shortly advance levels.
+![ui-mindmap 10](images/game-ui.png)
 
-The interface boilerplate is described in this mindmap below:
-![ui-mindmap 10](images/interface-schematic.png)
+## Documentation
+
+For more technical documentation go [here](DevelopmentProcess.md)
+
+###### Footer
 
 Game project developed during the Ironhack WDPT course
