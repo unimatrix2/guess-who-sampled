@@ -67,19 +67,24 @@ function currentFile(level) {
 }
 
 function newGameLives() {
-    const mainLeft = document.getElementById('left');
-    const lives = document.createElement('div');
-    lives.setAttribute('id', 'lives');
     const life = document.createElement('i');
     const life2 = document.createElement('i');
     const life3 = document.createElement('i');
     life.setAttribute('class', 'fas fa-heart fa-8x');
     life2.setAttribute('class', 'fas fa-heart fa-8x');
     life3.setAttribute('class', 'fas fa-heart fa-8x');
-    lives.appendChild(life);
-    lives.appendChild(life2);
-    lives.appendChild(life3);
+    currentGameLives.push(life, life2, life3);
+}
+
+function nextLives() {
+    const mainLeft = document.getElementById('left');
+    const lives = document.createElement('div');
+    lives.setAttribute('id', 'lives');
+    currentGameLives.forEach(element => {
+        lives.appendChild(element);
+    });
     mainLeft.appendChild(lives);
+
 }
 
 function currentAnswer(level) {
@@ -100,7 +105,6 @@ function currentAnswer(level) {
 }
 
 function getAlternatives() {
-    const mainRight = document.getElementById('right');
     const alt1 = document.createElement('button');
     const alt2 = document.createElement('button');
     const alt3 = document.createElement('button');
@@ -123,10 +127,10 @@ function writeAlts(level) {
     const alt2 = levels[level].alternatives[1];
     const alt3 = levels[level].alternatives[2];
     const alt4 = levels[level].answer;
-    alt1.setAttribute('class', 'wrong');
-    alt2.setAttribute('class', 'wrong');
-    alt3.setAttribute('class', 'wrong');
-    alt4.setAttribute('class', 'correct');
+    alt1.setAttribute('onclick', 'removeLife()');
+    alt2.setAttribute('onclick', 'removeLife()');
+    alt3.setAttribute('onclick', 'removeLife()');
+    alt4.setAttribute('onclick', 'nextLevel()');
     alt1.style.order = 0;
     alt2.style.order = 0;
     alt3.style.order = 0;
@@ -137,10 +141,10 @@ function writeAlts(level) {
         alt2.style.order === alt3.style.order ||
         alt2.style.order === alt4.style.order ||
         alt3.style.order === alt4.style.order) {
-            alt1.style.order = Math.floor(Math.random() * (4 - 1) ) + 1;
-            alt2.style.order = Math.floor(Math.random() * (4 - 1) ) + 1;
-            alt3.style.order = Math.floor(Math.random() * (4 - 1) ) + 1;
-            alt4.style.order = Math.floor(Math.random() * (4 - 1) ) + 1;
+            alt1.style.order = Math.floor(Math.random() * (5 - 1) ) + 1;
+            alt2.style.order = Math.floor(Math.random() * (5 - 1) ) + 1;
+            alt3.style.order = Math.floor(Math.random() * (5 - 1) ) + 1;
+            alt4.style.order = Math.floor(Math.random() * (5 - 1) ) + 1;
         }
     mainRight.appendChild(alt1);
     mainRight.appendChild(alt2);
@@ -148,7 +152,27 @@ function writeAlts(level) {
     mainRight.appendChild(alt4);
 }
 
-const alternatives = ['Lady Gaga - Poker Face', 'Marilyn Manson - Mwchanical Animals', 'Pink Floyd - Money', 'The Who - Who Are You',
+function removeLife() {
+    currentGameLives.pop();
+    setTimeout(() => {
+        clearUI();
+        updateGame(currentLevel);
+        writeAlts(currentLevel);
+        nextLives();
+        played();
+    }, 2000);
+}
+
+function nextLevel() {
+    clearUI();
+    updateGame(currentLevel);
+    writeAlts(currentLevel);
+    updateScore();
+    nextLives();
+    played();
+}
+
+const alternatives = ['Lady Gaga - Poker Face', 'Marilyn Manson - Mechanical Animals', 'Pink Floyd - Money', 'The Who - Who Are You',
 'Black Sabbath - Iron Man', 'Beyoncé - Run the World', 'Rihanna - S&M', 'Murderdolls - White Wedding', 'Black Eyed Peas - Meet me Halfway',
 'Alice Cooper - Million Dollar Babies', 'Benny Benassi - Satisfaction', 'Wu Tang Clan - C.R.E.A.M.', 'Blind Guardian - Mirror Mirror', 
 'Bob Marley - Jamming', 'Bon Jovi - Living on a Prayer', 'Skrillex - Bangarang', 'Bonetrips - Yallah', 'Matstubs - Spirits', 'Com Truise - VHS Sex', 

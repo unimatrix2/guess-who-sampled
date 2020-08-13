@@ -146,7 +146,7 @@ body {
 
 #lives {
     border: 4px solid darkgray;
-    width: 50%;
+    width: fit-content;
     display: flex;
     justify-content: space-around;
     color: red;
@@ -154,6 +154,22 @@ body {
     align-self: center;
     margin-bottom: 20px;
     order: 2;
+    padding: 0 10px;
+}
+
+#score {
+    border: 4px solid darkgray;
+    width: fit-content;
+    height: fit-content;
+    margin-right: 50px;
+    font-size: 2rem;
+    border-radius: 10px;
+    padding: 10px;
+    order: 10;
+}
+
+#score-text {
+    color: gray;
 }
 
 #play {
