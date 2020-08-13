@@ -10,7 +10,7 @@ If you've seen the UI layout on the README, here is a mindmap detailing
 how it is structured, although since the first prototypes, all the elements
 were moved into DOM manipulation inside JavaScript, leaving the HTML as a
 template.
-![ui-mindmap 10](images/interface-schematic)
+![ui-mindmap 10](images/interface-schematic.png)
 
 ## Data Structure
 

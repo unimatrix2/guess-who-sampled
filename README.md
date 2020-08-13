@@ -28,6 +28,7 @@ On the right you have the name of the song that's playing,
 the play button, and your lifes. On the left you have the link to the full song, 
 the possible answers and your current score. When you click an answer, 
 it will turn either green or red, and you'll shortly advance levels.
+
 ![ui-mindmap 10](images/game-ui.png)
 
 ## Documentation
