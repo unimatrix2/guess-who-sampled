@@ -114,7 +114,6 @@ function newGameLives() {
 }
 
 function nextLives() {
-    const mainLeft = document.getElementById('left');
     const lives = document.createElement('div');
     lives.setAttribute('id', 'lives');
     currentGameLives.forEach(element => {
@@ -127,7 +126,6 @@ function nextLives() {
 // Game UI functions
 
 function writeAlts() {
-    const mainRight = document.getElementById('right');
     const alt1 = levels[currentLevel].alternatives[0];
     const alt2 = levels[currentLevel].alternatives[1];
     const alt3 = levels[currentLevel].alternatives[2];
@@ -136,6 +134,10 @@ function writeAlts() {
     alt2.setAttribute('onclick', 'removeLife()');
     alt3.setAttribute('onclick', 'removeLife()');
     alt4.setAttribute('onclick', 'nextLevel()');
+    alt1.setAttribute('class', 'wrong');
+    alt2.setAttribute('class', 'wrong');
+    alt3.setAttribute('class', 'wrong');
+    alt4.setAttribute('class', 'correct');
     alt1.style.order = 0;
     alt2.style.order = 0;
     alt3.style.order = 0;
@@ -159,24 +161,67 @@ function writeAlts() {
 
 function removeLife() {
     currentGameLives.pop();
-    setTimeout(() => {
-        clearUI();
-        writeAlts();
-        updateGame();
-        nextLives();
-    }, 2000);
+    const left = document.getElementById('playing-now'); // had to redeclare bc scope issues
+    const right = document.getElementById('yt-link'); // had to redeclare bc scope issues
+    if (currentGameLives.length === 0) {
+        setTimeout(() => {
+            clearUI();
+            left.style.backgroundColor = 'lightcoral';
+            right.style.backgroundColor = 'lightcoral';
+            mainLeft.style.backgroundColor = 'lightcoral';
+            mainRight.style.backgroundColor = 'lightcoral';
+            left.innerHTML = `<h1 id="lost-text">YOU<br>LOST!</h1>`;
+            mainLeft.innerHTML = `<button id="start-game" onclick="clearUI();rebuildLevels();newGame();">Play Again?</button>`;
+        }, 2000);
+    } else {
+        setTimeout(() => {
+            clearUI();
+            writeAlts();
+            updateGame();
+            nextLives();
+        }, 2000);
+    }
 }
 
 function nextLevel() {
-    setTimeout(() => {
-        clearUI();
-        writeAlts();
-        updateGame();
-        updateScore();
-        nextLives();
-
-    }, 2000);
+    const left = document.getElementById('playing-now'); // had to redeclare bc scope issues
+    const right = document.getElementById('yt-link'); // had to redeclare bc scope issues
+    if (levels.length === 0 && currentGameLives.length > 0) {
+        setTimeout(() => {
+            clearUI();
+            left.style.backgroundColor = 'lightgreen';
+            right.style.backgroundColor = 'lightgreen';
+            mainLeft.style.backgroundColor = 'lightgreen';
+            mainRight.style.backgroundColor = 'lightgreen';
+            left.innerHTML = `<h1 id="won-text">YOU<br>WON!</h1>`;
+            mainLeft.innerHTML = `<button id="start-game" onclick="clearUI();rebuildLevels();newGame();">Play Again?</button>`;
+            currentGameLives = [];
+            bestScore = 0;
+        }, 2000);
+    } else {
+        setTimeout(() => {
+            clearUI();
+            writeAlts();
+            updateGame();
+            updateScore();
+            nextLives();
+    
+        }, 2000);
+    }
 }
+
+function updateGame() {
+    right.appendChild(levels[currentLevel].thumb);
+    right.appendChild(levels[currentLevel].currentSong);
+    left.innerHTML = '<i class="fab fa-youtube fa-10x"></i>';
+    left.appendChild(levels[currentLevel].currentLink);
+    mainLeft.appendChild(levels[currentLevel].currentFile);
+    mainRight.appendChild(score);
+    levels.splice(currentLevel, 1);
+    updateCurrentLevel();
+}
+
+
 
 const alternatives = ['Lady Gaga - Poker Face', 'Marilyn Manson - Mechanical Animals', 'Pink Floyd - Money', 'The Who - Who Are You',
 'Black Sabbath - Iron Man', 'Beyoncé - Run the World', 'Rihanna - S&M', 'Murderdolls - White Wedding', 'Black Eyed Peas - Meet me Halfway',
@@ -185,7 +230,7 @@ const alternatives = ['Lady Gaga - Poker Face', 'Marilyn Manson - Mechanical Ani
 'Criolo - Vasilhame', 'Datsik - Bonafide Hustler', 'deadmau5 - Some Chords', 'Dio - Holy Diver', 'Doctor P - Big Boss', 'Flux Pavilion - Bass Canon', 
 'Eminem - Lose Yourself', 'Everlast - Saving Grace', 'Focus - Hocus Pocus'];
 
-const levels = [
+let levels = [
     {
         thumb: getThumb(1),
         currentSong: currentSong(1),
@@ -211,3 +256,32 @@ const levels = [
         alternatives: getAlternatives(),
     }
 ];
+
+function rebuildLevels() {
+    levels = [
+        {
+            thumb: getThumb(1),
+            currentSong: currentSong(1),
+            currentLink: currentLink(1),
+            currentFile: currentFile(1),
+            answer: currentAnswer(1),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(2),
+            currentSong: currentSong(2),
+            currentLink: currentLink(2),
+            currentFile: currentFile(2),
+            answer: currentAnswer(2),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(3),
+            currentSong: currentSong(3),
+            currentLink: currentLink(3),
+            currentFile: currentFile(3),
+            answer: currentAnswer(3),
+            alternatives: getAlternatives(),
+        }
+    ];
+}

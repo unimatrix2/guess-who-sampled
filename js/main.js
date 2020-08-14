@@ -8,22 +8,11 @@ let currentLevel = selectLevel(0, levels.length);
 let lastLevel = JSON.parse(JSON.stringify(currentLevel));
 
 let bestScore = 0;
-const currentGameLives = [];
+let currentGameLives = [];
 
 const score = document.createElement('div');
 score.setAttribute('id', 'score');
 score.innerHTML = `<span id="score-text">Score: ${bestScore}</span>`;
-
-function updateGame() {
-    right.appendChild(levels[currentLevel].thumb);
-    right.appendChild(levels[currentLevel].currentSong);
-    left.innerHTML = '<i class="fab fa-youtube fa-10x"></i>';
-    left.appendChild(levels[currentLevel].currentLink);
-    mainLeft.appendChild(levels[currentLevel].currentFile);
-    mainRight.appendChild(score);
-    levels.splice(currentLevel, 1);
-    updateCurrentLevel();
-}
 
 function clearUI() {
     right.innerHTML = '';
@@ -56,16 +45,21 @@ function startGame() {
     updateGame();
     newGameLives();
     nextLives();
-    
 }
 
 function newGame() {
     clearUI();
     startGame();
+    const scoreText = document.getElementById('score-text');
+    scoreText.innerText = `Score: ${0}`;
+    left.removeAttribute('style');
+    right.removeAttribute('style');
+    mainLeft.removeAttribute('style');
+    mainRight.removeAttribute('style');
 }
 
 
 startButton.onclick = () => {
-    startButton.parentNode.removeChild(startButton);
+    clearUI();
     newGame();
 };

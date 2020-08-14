@@ -112,6 +112,7 @@ body {
     border-radius: 10px;
     border-color: darkgray;
     margin-left: 96%;
+    z-index: 1;
 }
 
 #start-game:hover {
@@ -142,6 +143,14 @@ body {
 #alt:hover {
     border-color: gray;
     color: darkgray;
+}
+
+.wrong:focus {
+    background-color: lightcoral;
+}
+
+.correct:focus {
+    background-color: lightgreen;
 }
 
 #lives {
@@ -184,4 +193,24 @@ body {
 #play:hover {
     color: gray;
     cursor: pointer;
+}
+
+#won-text {
+    color: green;
+    font-size: 6rem;
+    text-align: center;
+    align-self: center;
+    line-height: 1.5;
+    margin-left: 91%;
+    z-index: 1;
+}
+
+#lost-text {
+    color: darkred;
+    font-size: 6rem;
+    text-align: center;
+    align-self: center;
+    line-height: 1.5;
+    margin-left: 91%;
+    z-index: 1;
 }
