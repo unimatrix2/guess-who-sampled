@@ -20,6 +20,45 @@ function currentSong(level) {
         case 3:
             current.innerText = 'Blu and Exile - Blue as I Can Be';
             break;
+        case 4:
+            current.innerText = 'GoldLink - How It\'s Done';
+            break;
+        case 5:
+            current.innerText = 'TroyBoi - Do you';
+            break;
+        case 6:
+            current.innerText = 'Tropkillaz - Boa Noite';
+            break;
+        case 7:
+            current.innerText = 'Criolo - Vasilhame';
+            break;
+        case 8:
+            current.innerText = 'Daft Punk - Harder, Better, Faster, Stronger';
+            break;
+        case 9:
+            current.innerText = 'Daft Punk - One More Time';
+            break;
+        case 10:
+            current.innerText = 'Massive Attack - Intertia Creeps';
+            break;
+        case 11:
+            current.innerText = 'Lil Nas X - Old Town Road';
+            break;
+        case 12:
+            current.innerText = 'Nine Inch Nails - Closer';
+            break;
+        case 13:
+            current.innerText = 'Lil peep - 2008';
+            break;
+        case 14:
+            current.innerText = 'Słoń Ft. Lucas - Inkwizycja';
+            break;
+        case 15:
+            current.innerText = 'Notorious B.I.G. - Party N\'Bullshit (SW Remix)';
+            break;
+        case 16:
+            current.innerText = 'Brock Berrigan - The Look';
+            break;
     }
     return current;
 }
@@ -38,6 +77,45 @@ function currentLink(level) {
             break;
         case 3:
             text.setAttribute('href', 'https://www.youtube.com/watch?v=N40NewlFY5I');
+            break;
+        case 4:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=KylgkaGm_4w');
+            break;
+        case 5:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=piXRVCRY_ls');
+            break;
+        case 6:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=MkKTtNbZzWw');
+            break;
+        case 7:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=R8RFVVqW4iw');
+            break;
+        case 8:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=yydNF8tuVmU');
+            break;
+        case 9:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=A2VpR8HahKc');
+            break;
+        case 10:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=_xjxAXG6xPk');
+            break;
+        case 11:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=9YpvNgCSaCU');
+            break;
+        case 12:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=PTFwQP86BRs');
+            break;
+        case 13:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=U0pO-8cRFO4');
+            break;
+        case 14:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=4hp2qYzN-OY');
+            break;
+        case 15:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=cQXaNIE3gGo');
+            break;
+        case 16:
+            text.setAttribute('href', 'https://www.youtube.com/watch?v=h9nTZLNYaMc');
             break;
     }
     return text;
@@ -59,6 +137,45 @@ function currentFile(level) {
             break;
         case 3:
             audio.src = 'songs/blueasicanget.mp3';
+            break;
+        case 4:
+            audio.src = 'songs/howitsdone.mp3';
+            break;
+        case 5:
+            audio.src = 'songs/doyou.mp3';
+            break;
+        case 6:
+            audio.src = 'songs/boanoite.mp3';
+            break;
+        case 7:
+            audio.src = 'songs/vasilhame.mp3';
+            break;
+        case 8:
+            audio.src = 'songs/hbft.mp3';
+            break;
+        case 9:
+            audio.src = 'songs/onemoretime.mp3';
+            break;
+        case 10:
+            audio.src = 'songs/inertiacreeps.mp3';
+            break;
+        case 11:
+            audio.src = 'songs/oldtownroad.mp3';
+            break;
+        case 12:
+            audio.src = 'songs/closer.mp3';
+            break;
+        case 13:
+            audio.src = 'songs/2008.mp3';
+            break;
+        case 14:
+            audio.src = 'songs/inkwizycja.mp3';
+            break;
+        case 15:
+            audio.src = 'songs/pnb.mp3';
+            break;
+        case 16:
+            audio.src = 'songs/thelook.mp3';
             break;
 
     }
@@ -96,6 +213,45 @@ function currentAnswer(level) {
             break;
         case 3:
             answer.innerText = 'Eminem - White America';
+            break;
+        case 4:
+            answer.innerText = 'Britney Spears - Toxic';
+            break;
+        case 5:
+            answer.innerText = 'Bendaly Family - Do You Love Me';
+            break;
+        case 6:
+            answer.innerText = 'Barbatuques - Baianá';
+            break;
+        case 7:
+            answer.innerText = 'Them Two - Am I a Good Man';
+            break;
+        case 8:
+            answer.innerText = 'Edwin Birdsong - Cola Bottle Baby';
+            break;
+        case 9:
+            answer.innerText = 'Eddie Johns - More Spell On you';
+            break;
+        case 10:
+            answer.innerText = 'Ultravox - Rockwrok';
+            break;
+        case 11:
+            answer.innerText = 'Nine Inch Nails - 34 Ghosts IV';
+            break;
+        case 12:
+            answer.innerText = 'Iggy Pop - Nightclubbing';
+            break;
+        case 13:
+            answer.innerText = 'Marilyn Manson - Coma White';
+            break;
+        case 14:
+            answer.innerText = 'Marilyn Manson - Antichrist Superstar';
+            break;
+        case 15:
+            answer.innerText = 'John Williams - Cantina Band (SW: A New Hope)';
+            break;
+        case 16:
+            answer.innerText = 'Carmen McRae - The Look Of Love';
             break;
     }
     return answer;
@@ -186,7 +342,7 @@ function removeLife() {
 function nextLevel() {
     const left = document.getElementById('playing-now'); // had to redeclare bc scope issues
     const right = document.getElementById('yt-link'); // had to redeclare bc scope issues
-    if (levels.length === 0 && currentGameLives[0] !== undefined && bestScore > 2) {
+    if (levels.length === 0 && currentGameLives[0] !== undefined) {
         setTimeout(() => {
             clearUI();
             left.style.backgroundColor = 'lightgreen';
@@ -198,7 +354,7 @@ function nextLevel() {
             currentGameLives = [];
             bestScore = 0;
         }, 2000);
-    }   else if (levels.length === 0 && currentGameLives[0] !== undefined && bestScore < 2) {
+    }   else if (levels.length === 0 && currentGameLives[0] !== undefined && bestScore < 8) {
             setTimeout(() => {
                 clearUI();
                 left.style.backgroundColor = 'lightcoral';
@@ -264,6 +420,110 @@ let levels = [
         currentFile: currentFile(3),
         answer: currentAnswer(3),
         alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(4),
+        currentSong: currentSong(4),
+        currentLink: currentLink(4),
+        currentFile: currentFile(4),
+        answer: currentAnswer(4),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(5),
+        currentSong: currentSong(5),
+        currentLink: currentLink(5),
+        currentFile: currentFile(5),
+        answer: currentAnswer(5),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(6),
+        currentSong: currentSong(6),
+        currentLink: currentLink(6),
+        currentFile: currentFile(6),
+        answer: currentAnswer(6),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(7),
+        currentSong: currentSong(7),
+        currentLink: currentLink(7),
+        currentFile: currentFile(7),
+        answer: currentAnswer(7),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(8),
+        currentSong: currentSong(8),
+        currentLink: currentLink(8),
+        currentFile: currentFile(8),
+        answer: currentAnswer(8),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(9),
+        currentSong: currentSong(9),
+        currentLink: currentLink(9),
+        currentFile: currentFile(9),
+        answer: currentAnswer(9),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(10),
+        currentSong: currentSong(10),
+        currentLink: currentLink(10),
+        currentFile: currentFile(10),
+        answer: currentAnswer(10),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(11),
+        currentSong: currentSong(11),
+        currentLink: currentLink(11),
+        currentFile: currentFile(11),
+        answer: currentAnswer(11),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(12),
+        currentSong: currentSong(12),
+        currentLink: currentLink(12),
+        currentFile: currentFile(12),
+        answer: currentAnswer(12),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(13),
+        currentSong: currentSong(13),
+        currentLink: currentLink(13),
+        currentFile: currentFile(13),
+        answer: currentAnswer(13),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(14),
+        currentSong: currentSong(14),
+        currentLink: currentLink(14),
+        currentFile: currentFile(14),
+        answer: currentAnswer(14),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(15),
+        currentSong: currentSong(15),
+        currentLink: currentLink(15),
+        currentFile: currentFile(15),
+        answer: currentAnswer(15),
+        alternatives: getAlternatives(),
+    },
+    {
+        thumb: getThumb(16),
+        currentSong: currentSong(16),
+        currentLink: currentLink(16),
+        currentFile: currentFile(16),
+        answer: currentAnswer(16),
+        alternatives: getAlternatives(),
     }
 ];
 
@@ -291,6 +551,110 @@ function rebuildLevels() {
             currentLink: currentLink(3),
             currentFile: currentFile(3),
             answer: currentAnswer(3),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(4),
+            currentSong: currentSong(4),
+            currentLink: currentLink(4),
+            currentFile: currentFile(4),
+            answer: currentAnswer(4),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(5),
+            currentSong: currentSong(5),
+            currentLink: currentLink(5),
+            currentFile: currentFile(5),
+            answer: currentAnswer(5),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(6),
+            currentSong: currentSong(6),
+            currentLink: currentLink(6),
+            currentFile: currentFile(6),
+            answer: currentAnswer(6),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(7),
+            currentSong: currentSong(7),
+            currentLink: currentLink(7),
+            currentFile: currentFile(7),
+            answer: currentAnswer(7),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(8),
+            currentSong: currentSong(8),
+            currentLink: currentLink(8),
+            currentFile: currentFile(8),
+            answer: currentAnswer(8),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(9),
+            currentSong: currentSong(9),
+            currentLink: currentLink(9),
+            currentFile: currentFile(9),
+            answer: currentAnswer(9),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(10),
+            currentSong: currentSong(10),
+            currentLink: currentLink(10),
+            currentFile: currentFile(10),
+            answer: currentAnswer(10),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(11),
+            currentSong: currentSong(11),
+            currentLink: currentLink(11),
+            currentFile: currentFile(11),
+            answer: currentAnswer(11),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(12),
+            currentSong: currentSong(12),
+            currentLink: currentLink(12),
+            currentFile: currentFile(12),
+            answer: currentAnswer(12),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(13),
+            currentSong: currentSong(13),
+            currentLink: currentLink(13),
+            currentFile: currentFile(13),
+            answer: currentAnswer(13),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(14),
+            currentSong: currentSong(14),
+            currentLink: currentLink(14),
+            currentFile: currentFile(14),
+            answer: currentAnswer(14),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(15),
+            currentSong: currentSong(15),
+            currentLink: currentLink(15),
+            currentFile: currentFile(15),
+            answer: currentAnswer(15),
+            alternatives: getAlternatives(),
+        },
+        {
+            thumb: getThumb(16),
+            currentSong: currentSong(16),
+            currentLink: currentLink(16),
+            currentFile: currentFile(16),
+            answer: currentAnswer(16),
             alternatives: getAlternatives(),
         }
     ];
