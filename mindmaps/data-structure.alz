@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<design version="1.19.0">
+ <color r="186" b="182" g="189"/>
+ <edge-color r="0" b="0" g="0"/>
+ <edge-width>2000</edge-width>
+ <text-size>11000</text-size>
+ <corner-radius>5000</corner-radius>
+ <graph>
+  <node index="0" h="75000" x="-553465" y="-105940" w="200000">
+   <text>Levels object</text>
+   <color r="170" b="0" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="1" h="75000" x="-263366" y="-106806" w="200000">
+   <text>Each prop invokes:</text>
+   <color r="255" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="2" h="75000" x="-251485" y="-311757" w="200000">
+   <text>getThumb() --> 
+image node element</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="3" h="75000" x="5940" y="-309777" w="239000">
+   <text>currentSong() --> name
+of the song in node element</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="4" h="75000" x="76237" y="-203836" w="284000">
+   <text>currentLink() --> sets the youtube
+link for the current song</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="6" h="75000" x="135643" y="-101856" w="237000">
+   <text>currentFile() --> audio node
+element</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="7" h="75000" x="133663" y="3094" w="235000">
+   <text>currentAnswer --> sets the 
+correct alternative</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="8" h="82000" x="84158" y="120915" w="256000">
+   <text>getAlternatives() --> get three
+random alternatives from the
+alternatives array</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="9" h="75000" x="-554455" y="-9900" w="200000">
+   <text>alternatives array</text>
+   <color r="170" b="0" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="10" h="75000" x="-269306" y="91212" w="273000">
+   <text>Big array with many altrenatives</text>
+   <color r="85" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <edge index1="1" index0="0" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+  <edge index1="2" index0="1" arrow-mode="0" reversed="0">
+   <text>1</text>
+  </edge>
+  <edge index1="3" index0="1" arrow-mode="0" reversed="0">
+   <text>2</text>
+  </edge>
+  <edge index1="4" index0="1" arrow-mode="0" reversed="0">
+   <text>3</text>
+  </edge>
+  <edge index1="6" index0="1" arrow-mode="0" reversed="0">
+   <text>4</text>
+  </edge>
+  <edge index1="7" index0="1" arrow-mode="0" reversed="0">
+   <text>5</text>
+  </edge>
+  <edge index1="8" index0="1" arrow-mode="0" reversed="0">
+   <text>6</text>
+  </edge>
+  <edge index1="10" index0="9" arrow-mode="0" reversed="0">
+   <text></text>
+  </edge>
+ </graph>
+</design>

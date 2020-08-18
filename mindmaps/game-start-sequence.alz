@@ -1,75 +1,74 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<design version="1.18.0">
+<design version="1.19.0">
  <color r="186" b="182" g="189"/>
  <edge-color r="0" b="0" g="0"/>
  <edge-width>2000</edge-width>
  <text-size>11000</text-size>
  <corner-radius>5000</corner-radius>
  <graph>
-  <node index="0" h="75000" x="-727530" y="-83702" w="200000">
+  <node index="0" h="75000" x="-728734" y="-83702" w="200000">
    <text>newGame()</text>
-   <color r="255" b="255" g="255"/>
+   <color r="255" b="127" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="1" h="75000" x="-722097" y="-469721" w="326000">
+  <node index="1" h="75000" x="-829325" y="-419118" w="326000">
    <text>            clearUI() (deleta os elementos e
 recoloca os elementos base da UI) </text>
-   <color r="255" b="255" g="255"/>
+   <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="2" h="75000" x="-418764" y="-301203" w="358000">
-   <text>startGame (funcao para iniciar a UI do jogo)</text>
-   <color r="255" b="255" g="255"/>
+  <node index="2" h="75000" x="-418764" y="-301203" w="244000">
+   <text>startGame (display game UI)</text>
+   <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="12" h="75000" x="-636420" y="-755894" w="262000">
-   <text>selectLevel() --> selecionar um
-nivel aleatorio</text>
-   <color r="255" b="255" g="255"/>
+  <node index="12" h="75000" x="-772564" y="-642640" w="304000">
+   <text>selectLevel() --> select random level</text>
+   <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="15" h="75000" x="-180988" y="-562438" w="309000">
-   <text>newGameLives (escrever vidas na ui)</text>
-   <color r="255" b="255" g="255"/>
+  <node index="15" h="75000" x="-180988" y="-562438" w="278000">
+   <text>newGameLives() --> display lives</text>
+   <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="16" h="75000" x="-732098" y="174074" w="200000">
-   <text>Tela de Start estatica</text>
-   <color r="255" b="255" g="255"/>
+  <node index="16" h="75000" x="-729688" y="174074" w="200000">
+   <text>Static start screen</text>
+   <color r="85" b="255" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="17" h="75000" x="-420987" y="-664660" w="296000">
-   <text>updateGame(return da select level)
---> dispor a UI do nivel</text>
-   <color r="255" b="255" g="255"/>
+  <node index="17" h="75000" x="-429420" y="-655021" w="233000">
+   <text>updateGame(selectLevel())
+--> display level</text>
+   <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="18" h="75000" x="144578" y="-461596" w="493000">
-   <text>writeAlerts() --> tijolo de codigo que add as alternativas na UI
-de forma aleatoria, em posicoes aleatorias</text>
-   <color r="255" b="255" g="255"/>
+  <node index="18" h="75000" x="20481" y="-451957" w="347000">
+   <text>writeAlts() --> big code block that displays
+the alternatives</text>
+   <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <edge index1="1" index0="0" arrow-mode="0" reversed="0">
-   <text>invocar 1</text>
+   <text>invoke 1</text>
   </edge>
   <edge index1="2" index0="0" arrow-mode="0" reversed="0">
-   <text>invocar 2</text>
+   <text>invoke 2</text>
   </edge>
   <edge index1="12" index0="2" arrow-mode="0" reversed="0">
-   <text>invocar 1</text>
+   <text>invoke 1</text>
   </edge>
   <edge index1="15" index0="2" arrow-mode="0" reversed="0">
-   <text>invocar 3</text>
+   <text>invoke 3</text>
   </edge>
   <edge index1="17" index0="2" arrow-mode="0" reversed="0">
-   <text>invocar 2</text>
+   <text>invoke 2</text>
   </edge>
   <edge index1="18" index0="2" arrow-mode="0" reversed="0">
-   <text>invocar 4</text>
+   <text>invoke 4</text>
   </edge>
   <edge index1="0" index0="16" arrow-mode="0" reversed="0">
-   <text>clicl no botao de start</text>
+   <text>start button click</text>
   </edge>
  </graph>
 </design>
