@@ -384,7 +384,14 @@ const alternatives = ['Lady Gaga - Poker Face', 'Marilyn Manson - Mechanical Ani
 'Alice Cooper - Million Dollar Babies', 'Benny Benassi - Satisfaction', 'Wu Tang Clan - C.R.E.A.M.', 'Blind Guardian - Mirror Mirror', 
 'Bob Marley - Jamming', 'Bon Jovi - Living on a Prayer', 'Skrillex - Bangarang', 'Bonetrips - Yallah', 'Matstubs - Spirits', 'Com Truise - VHS Sex', 
 'Criolo - Vasilhame', 'Datsik - Bonafide Hustler', 'deadmau5 - Some Chords', 'Dio - Holy Diver', 'Doctor P - Big Boss', 'Flux Pavilion - Bass Canon', 
-'Eminem - Lose Yourself', 'Everlast - Saving Grace', 'Focus - Hocus Pocus'];
+'Eminem - Lose Yourself', 'Everlast - Saving Grace', 'Focus - Hocus Pocus', 'Eminem - The Real Slim Shady', 'Black Eyed Peas - Rock That Body', 'Bendaly Family - Warak Al Khareef',
+'Skrillex - Scary Monsters and Nice Sprites', 'Marilyn Manson - Coma Black', 'Rihanna - Diamonds', 'Racionais MCs - Fim de Semana no Parque',
+'Alison Wonderland - I Want U', 'Barbatuques - Abduzidos', 'Benny Benassi - Satisfaction', 'Brock Berrigan - The Mad Magician',
+'Chico Buarque - Construção', 'Daft Punk - Technologic', 'Denzel Curry - Ultimate', 'Dio - Rainbow in The Dark', 'Doctor P - Flying Spagetti Monster',
+'Easy Star All Stars - One Likkle Draw', 'Bendaly Family - Ta Nensa', 'Edwin Birdsong - Old Messiah', 'Eddie Johns - Magic Party', 'Ultravox - The Thin Wall',
+'Marilyn Manson - Mechanical Animals', 'Eminem - Business', 'Nusrat Fateh Ali Khan - Longing', 'Pink Floyd - High Hopes', 'Pink Floyd - Have a Cigar',
+'Flume - Some Minds', 'Gabriel o Pensador - Palavras Repetidas', 'Gameface - Brutal', 'George Benson - The Ghetto', 'Gigamesh - All My Life',
+'Godsmack - Serenity', 'Chico Buarque - Vida', 'Haddaway - What Is Love', 'Hippie Sabotage - Devil Eyes', 'Infected Mushroom - The Pretender', 'Jetta - Take It Easy'];
 
 let levels = [
     {
