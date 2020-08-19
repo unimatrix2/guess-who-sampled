@@ -50,3 +50,8 @@ separate and independent, so at each user interaction there is one function that
 every other part, but there is no function rabbit hole (function invoking function invoking function and so on), 
 so debugging was a little easier, because bugs are always part-specific, although on the other side of the coin, 
 more attention was required as things would work without necessarily being right.
+
+## Special Thanks to
+
+- My teachers and TAs involved in my learning experience that helped me get this far
+- Jussi Lind for developing [Heimer](https://github.com/juzzlin/Heimer), the Open Source mindmap tool I used to make these docs
