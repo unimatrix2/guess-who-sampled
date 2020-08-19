@@ -7,7 +7,7 @@ guess from which song the sample used inside the track came from!
 
 The rules are simple:
 
-You have 3 lives to win the game, and to win you have to go through all levels.
+You have 3 lives to win the game, and to win you have to get more than half the levels right.
 
 On the top, the level's track will be displayed, and if you want to, the YouTube
 link by your right will take you to YouTube so you can listen to the full track.
