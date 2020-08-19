@@ -1,9 +1,0 @@
-
-
-const niveis = [
-    {
-        thumb: 
-        currentSong:
-
-    }
-]
