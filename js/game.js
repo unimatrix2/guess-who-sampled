@@ -342,21 +342,7 @@ function removeLife() {
 function nextLevel() {
     const left = document.getElementById('playing-now'); // had to redeclare bc scope issues
     const right = document.getElementById('yt-link'); // had to redeclare bc scope issues
-    if (levels.length === 0 &&
-        currentGameLives[0] !== undefined &&
-        bestScore < 8) {
-        setTimeout(() => {
-            clearUI();
-            left.style.backgroundColor = 'lightcoral';
-            right.style.backgroundColor = 'lightcoral';
-            mainLeft.style.backgroundColor = 'lightcoral';
-            mainRight.style.backgroundColor = 'lightcoral';
-            left.innerHTML = `<h1 id="lost-text">YOU<br>LOST!</h1>`;
-            mainLeft.innerHTML = `<button id="start-game" onclick="clearUI();rebuildLevels();newGame();">Play Again?</button>`;
-            }, 2000);
-    } else if (levels.length === 0 &&
-        currentGameLives[0] !== undefined &&
-        bestScore >= 8) {
+    if (levels.length === 0 && currentGameLives[0] !== undefined) {
         setTimeout(() => {
             clearUI();
             left.style.backgroundColor = 'lightgreen';
