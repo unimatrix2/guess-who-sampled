@@ -5,7 +5,6 @@ const mainRight = document.getElementById('right');
 const startButton = document.getElementById('start-game');
 
 let currentLevel = selectLevel(0, levels.length);
-let lastLevel = JSON.parse(JSON.stringify(currentLevel));
 
 let bestScore = 0;
 let currentGameLives = [];
@@ -21,19 +20,9 @@ function clearUI() {
     mainRight.innerHTML = '';
 }
 
-function updateCurrentLevel() {
-    lastLevel = JSON.parse(JSON.stringify(currentLevel));
-    if (levels.length > 1) {
-        do {
-            currentLevel = selectLevel(0, levels.length);
-        } while (currentLevel === lastLevel);
-    }
-    currentLevel = 0;
-}
-
 function updateScore() {
     const scoreText = document.getElementById('score-text');
-    scoreText.innerText = `Score: ${bestScore += 1}`;
+    scoreText.innerText = `Score: ${bestScore}`;
 }
 
 function selectLevel(min, max) {

@@ -359,6 +359,7 @@ function nextLevel() {
             clearUI();
             writeAlts();
             updateGame();
+            bestScore += 1;
             updateScore();
             nextLives();
     
@@ -374,7 +375,7 @@ function updateGame() {
     mainLeft.appendChild(levels[currentLevel].currentFile);
     mainRight.appendChild(score);
     levels.splice(currentLevel, 1);
-    updateCurrentLevel();
+    currentLevel = selectLevel(0, levels.length);
 }
 
 
