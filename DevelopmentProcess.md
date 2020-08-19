@@ -29,10 +29,15 @@ document. The result is a big array with objects that gets manipulated.
 As I previously stated, the levels are stored inside an array with objects that gets manipulated. As the player
 advances levels, the completed or missed level gets removed from the array, so it won't be selected again. Well
 then, how come there is a play again button if the data is gone? There is a function that stores the full array, 
-so when the game is won or lost, the function "resets" the array, bringing back the levels. This unfortunate decision
-was made because of the previous, questionable decision. By not having raw data inside the properties, manipulating the
+so when the game is won or lost, the function "resets" the array, bringing back the levels (I will spec this out in the next section). 
+This unfortunate decision was made because of the previous, questionable decision. By not having raw data inside the properties, manipulating the
 objects mutated the properties because they store a function call, so re-setting the array ensured identical node elements.
 
+![level-progression 10](images/level-progression.png)
+
+## Play Again Button
+
+![play-again 10](images/play-again.png)
 
 ## Lifes
 

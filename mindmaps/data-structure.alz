@@ -12,7 +12,7 @@
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="1" h="75000" x="-263366" y="-106806" w="200000">
-   <text>Each prop invokes:</text>
+   <text>Each prop calls:</text>
    <color r="255" b="255" g="255"/>
    <text-color r="0" b="0" g="0"/>
   </node>

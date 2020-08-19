@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<design version="1.19.0">
+ <color r="186" b="182" g="189"/>
+ <edge-color r="0" b="0" g="0"/>
+ <edge-width>2000</edge-width>
+ <text-size>11000</text-size>
+ <corner-radius>5000</corner-radius>
+ <graph>
+  <node index="0" h="75000" x="-50413" y="173553" w="200000">
+   <text>    Play Again Button</text>
+   <color r="255" b="0" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="1" h="75000" x="-309917" y="-106095" w="200000">
+   <text>          clearUI()</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="2" h="75000" x="-52066" y="-106921" w="243000">
+   <text>rebuildLevels() --> sets back
+the levels array</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="3" h="75000" x="200000" y="-108574" w="200000">
+   <text>        newGame()</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <edge index1="1" index0="0" arrow-mode="0" reversed="0">
+   <text>call 1</text>
+  </edge>
+  <edge index1="2" index0="0" arrow-mode="0" reversed="0">
+   <text>call 2</text>
+  </edge>
+  <edge index1="3" index0="0" arrow-mode="0" reversed="0">
+   <text>call 3</text>
+  </edge>
+ </graph>
+</design>

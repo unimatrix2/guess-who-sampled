@@ -17,17 +17,17 @@ recoloca os elementos base da UI) </text>
    <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="2" h="75000" x="-418764" y="-301203" w="244000">
+  <node index="2" h="75000" x="-342677" y="-80550" w="244000">
    <text>startGame (display game UI)</text>
    <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="12" h="75000" x="-772564" y="-642640" w="304000">
+  <node index="12" h="75000" x="-811694" y="-530683" w="304000">
    <text>selectLevel() --> select random level</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="15" h="75000" x="-180988" y="-562438" w="278000">
+  <node index="15" h="75000" x="-273379" y="-622220" w="278000">
    <text>newGameLives() --> display lives</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
@@ -37,35 +37,34 @@ recoloca os elementos base da UI) </text>
    <color r="85" b="255" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="17" h="75000" x="-429420" y="-655021" w="233000">
-   <text>updateGame(selectLevel())
---> display level</text>
+  <node index="17" h="75000" x="-613115" y="-622412" w="263000">
+   <text>updateGame() --> display level</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="18" h="75000" x="20481" y="-451957" w="347000">
+  <node index="18" h="75000" x="-6692" y="-531304" w="347000">
    <text>writeAlts() --> big code block that displays
 the alternatives</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <edge index1="1" index0="0" arrow-mode="0" reversed="0">
-   <text>invoke 1</text>
+   <text>call 1</text>
   </edge>
   <edge index1="2" index0="0" arrow-mode="0" reversed="0">
-   <text>invoke 2</text>
+   <text>call 2</text>
   </edge>
   <edge index1="12" index0="2" arrow-mode="0" reversed="0">
-   <text>invoke 1</text>
+   <text>call 1</text>
   </edge>
   <edge index1="15" index0="2" arrow-mode="0" reversed="0">
-   <text>invoke 3</text>
+   <text>call 3</text>
   </edge>
   <edge index1="17" index0="2" arrow-mode="0" reversed="0">
-   <text>invoke 2</text>
+   <text>call 2</text>
   </edge>
   <edge index1="18" index0="2" arrow-mode="0" reversed="0">
-   <text>invoke 4</text>
+   <text>call 4</text>
   </edge>
   <edge index1="0" index0="16" arrow-mode="0" reversed="0">
    <text>start button click</text>

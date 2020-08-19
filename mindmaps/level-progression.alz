@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<design version="1.19.0">
+ <color r="186" b="182" g="189"/>
+ <edge-color r="0" b="0" g="0"/>
+ <edge-width>2000</edge-width>
+ <text-size>11000</text-size>
+ <corner-radius>5000</corner-radius>
+ <graph>
+  <node index="0" h="75000" x="-222115" y="352884" w="200000">
+   <text>nextLevel() --> checks
+for more levels</text>
+   <color r="255" b="0" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="1" h="75000" x="-322115" y="82692" w="200000">
+   <text>setTimeout()</text>
+   <color r="170" b="255" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="2" h="75000" x="-689423" y="122115" w="200000">
+   <text>clearUI() --> clear the
+game interface</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="3" h="75000" x="-683653" y="-35576" w="200000">
+   <text>writeAlts()</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="4" h="75000" x="-674038" y="-178846" w="200000">
+   <text>updateGame()</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="5" h="75000" x="-393269" y="-310576" w="200000">
+   <text>score</text>
+   <color r="0" b="255" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="6" h="75000" x="-650961" y="-303846" w="220000">
+   <text>updateScore() --> display
+new score</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="7" h="75000" x="-75000" y="-314423" w="278000">
+   <text>nextLives() --> display remaining
+lives on next level</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="9" h="75000" x="-48076" y="-40384" w="200000">
+   <text>clearUI()</text>
+   <color r="170" b="255" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="10" h="75000" x="200000" y="-41346" w="200000">
+   <text>display win screen</text>
+   <color r="85" b="255" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="11" h="75000" x="244230" y="83653" w="218000">
+   <text>display play again button</text>
+   <color r="85" b="255" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="12" h="75000" x="275000" y="198076" w="200000">
+   <text>lives and score</text>
+   <color r="85" b="255" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <edge index1="1" index0="0" arrow-mode="0" reversed="0">
+   <text>if true invokes</text>
+  </edge>
+  <edge index1="9" index0="0" arrow-mode="0" reversed="0">
+   <text>if false invokes</text>
+  </edge>
+  <edge index1="10" index0="0" arrow-mode="0" reversed="0">
+   <text>2</text>
+  </edge>
+  <edge index1="11" index0="0" arrow-mode="0" reversed="0">
+   <text>3</text>
+  </edge>
+  <edge index1="12" index0="0" arrow-mode="0" reversed="0">
+   <text>resets</text>
+  </edge>
+  <edge index1="2" index0="1" arrow-mode="0" reversed="0">
+   <text>invoke 1</text>
+  </edge>
+  <edge index1="3" index0="1" arrow-mode="0" reversed="0">
+   <text>invoke 2</text>
+  </edge>
+  <edge index1="4" index0="1" arrow-mode="0" reversed="0">
+   <text>invoke 3</text>
+  </edge>
+  <edge index1="5" index0="1" arrow-mode="0" reversed="0">
+   <text>change</text>
+  </edge>
+  <edge index1="6" index0="1" arrow-mode="0" reversed="0">
+   <text>invoke 4</text>
+  </edge>
+  <edge index1="7" index0="1" arrow-mode="0" reversed="0">
+   <text>invoke 5</text>
+  </edge>
+ </graph>
+</design>
