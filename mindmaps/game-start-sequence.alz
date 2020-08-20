@@ -6,45 +6,46 @@
  <text-size>11000</text-size>
  <corner-radius>5000</corner-radius>
  <graph>
-  <node index="0" h="75000" x="-728734" y="-83702" w="200000">
+  <node index="0" h="75000" x="-976156" y="-75454" w="200000">
    <text>newGame()</text>
    <color r="255" b="127" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="1" h="75000" x="-829325" y="-419118" w="326000">
+  <node index="1" h="75000" x="-975716" y="-326334" w="326000">
    <text>            clearUI() (deleta os elementos e
 recoloca os elementos base da UI) </text>
    <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="2" h="75000" x="-342677" y="-80550" w="244000">
+  <node index="2" h="75000" x="-498347" y="-74364" w="244000">
    <text>startGame (display game UI)</text>
    <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="12" h="75000" x="-811694" y="-530683" w="304000">
-   <text>selectLevel() --> select random level</text>
+  <node index="15" h="75000" x="-220801" y="-257271" w="273000">
+   <text>newGameLives() --> create lives
+and push them to lives array</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="15" h="75000" x="-273379" y="-622220" w="278000">
-   <text>newGameLives() --> display lives</text>
-   <color r="0" b="0" g="170"/>
-   <text-color r="0" b="0" g="0"/>
-  </node>
-  <node index="16" h="75000" x="-729688" y="174074" w="200000">
+  <node index="16" h="75000" x="-978141" y="158610" w="200000">
    <text>Static start screen</text>
    <color r="85" b="255" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="17" h="75000" x="-613115" y="-622412" w="263000">
+  <node index="17" h="75000" x="-498682" y="-419319" w="263000">
    <text>updateGame() --> display level</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="18" h="75000" x="-6692" y="-531304" w="347000">
+  <node index="18" h="75000" x="-887138" y="-422277" w="347000">
    <text>writeAlts() --> big code block that displays
 the alternatives</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="19" h="75000" x="-498319" y="126365" w="236000">
+   <text>nextLives() --> display lives</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
@@ -54,9 +55,6 @@ the alternatives</text>
   <edge index1="2" index0="0" arrow-mode="0" reversed="0">
    <text>call 2</text>
   </edge>
-  <edge index1="12" index0="2" arrow-mode="0" reversed="0">
-   <text>call 1</text>
-  </edge>
   <edge index1="15" index0="2" arrow-mode="0" reversed="0">
    <text>call 3</text>
   </edge>
@@ -64,6 +62,9 @@ the alternatives</text>
    <text>call 2</text>
   </edge>
   <edge index1="18" index0="2" arrow-mode="0" reversed="0">
+   <text>call 1</text>
+  </edge>
+  <edge index1="19" index0="2" arrow-mode="0" reversed="0">
    <text>call 4</text>
   </edge>
   <edge index1="0" index0="16" arrow-mode="0" reversed="0">

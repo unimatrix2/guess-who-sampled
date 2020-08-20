@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<design version="1.19.0">
+ <color r="186" b="182" g="189"/>
+ <edge-color r="0" b="0" g="0"/>
+ <edge-width>2000</edge-width>
+ <text-size>11000</text-size>
+ <corner-radius>5000</corner-radius>
+ <graph>
+  <node index="2" h="75000" x="-616666" y="-115079" w="205000">
+   <text>         Lives array
+(after newGameLives())</text>
+   <color r="170" b="0" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="5" h="75000" x="-633333" y="-305555" w="200000">
+   <text>   wrong alternative</text>
+   <color r="170" b="127" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="6" h="75000" x="-245238" y="-306547" w="200000">
+   <text>       removeLife()</text>
+   <color r="0" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="7" h="75000" x="104761" y="-305753" w="200000">
+   <text>removes a life from
+the array</text>
+   <color r="255" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="8" h="75000" x="83333" y="-150992" w="255000">
+   <text>checks for game over (if there
+are no lives left)</text>
+   <color r="255" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="9" h="75000" x="-243650" y="-115277" w="200000">
+   <text>      advances level</text>
+   <color r="255" b="0" g="170"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="10" h="75000" x="84920" y="35515" w="200000">
+   <text>    game over screen</text>
+   <color r="170" b="127" g="85"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <edge index1="6" index0="5" arrow-mode="0" reversed="0">
+   <text>calls</text>
+  </edge>
+  <edge index1="7" index0="6" arrow-mode="0" reversed="0">
+   <text>1</text>
+  </edge>
+  <edge index1="8" index0="6" arrow-mode="0" reversed="0">
+   <text>2</text>
+  </edge>
+  <edge index1="9" index0="6" arrow-mode="0" reversed="0">
+   <text>if there are lives</text>
+  </edge>
+  <edge index1="10" index0="8" arrow-mode="0" reversed="0">
+   <text>if no lives left</text>
+  </edge>
+ </graph>
+</design>

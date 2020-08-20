@@ -41,6 +41,8 @@ objects mutated the properties because they store a function call, so re-setting
 
 ## Lifes
 
+
+
 ## Score
 
 ## Considerations
