@@ -37,4 +37,5 @@ For more technical documentation go [here](DevelopmentProcess.md)
 
 ###### Footer
 
-Game project developed during the Ironhack WDPT course
+Game project developed during the Ironhack WDPT course as
+the first module project.
