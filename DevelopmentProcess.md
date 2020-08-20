@@ -43,8 +43,6 @@ objects mutated the properties because they store a function call, so re-setting
 
 ![life-system](images/life-system.png)
 
-## Score
-
 ## Considerations
 
 Because I went for a more functional approach, I tried to keep each part of the game
