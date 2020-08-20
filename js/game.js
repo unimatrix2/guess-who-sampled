@@ -248,7 +248,7 @@ function currentAnswer(level) {
             answer.innerText = 'Marilyn Manson - Antichrist Superstar';
             break;
         case 15:
-            answer.innerText = 'John Williams - Cantina Band (SW: A New Hope)';
+            answer.innerText = 'John Williams - Cantina Band';
             break;
         case 16:
             answer.innerText = 'Carmen McRae - The Look Of Love';
