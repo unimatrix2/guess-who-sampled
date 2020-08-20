@@ -33,7 +33,7 @@ game interface</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="5" h="75000" x="-393269" y="-310576" w="200000">
+  <node index="5" h="75000" x="-372168" y="-307823" w="200000">
    <text>score</text>
    <color r="0" b="255" g="170"/>
    <text-color r="0" b="0" g="0"/>
@@ -71,10 +71,10 @@ lives on next level</text>
    <text-color r="0" b="0" g="0"/>
   </node>
   <edge index1="1" index0="0" arrow-mode="0" reversed="0">
-   <text>if true invokes</text>
+   <text>if true calls</text>
   </edge>
   <edge index1="9" index0="0" arrow-mode="0" reversed="0">
-   <text>if false invokes</text>
+   <text>if false calls</text>
   </edge>
   <edge index1="10" index0="0" arrow-mode="0" reversed="0">
    <text>2</text>
@@ -86,22 +86,22 @@ lives on next level</text>
    <text>resets</text>
   </edge>
   <edge index1="2" index0="1" arrow-mode="0" reversed="0">
-   <text>invoke 1</text>
+   <text>call 1</text>
   </edge>
   <edge index1="3" index0="1" arrow-mode="0" reversed="0">
-   <text>invoke 2</text>
+   <text>call 2</text>
   </edge>
   <edge index1="4" index0="1" arrow-mode="0" reversed="0">
-   <text>invoke 3</text>
+   <text>call 3</text>
   </edge>
   <edge index1="5" index0="1" arrow-mode="0" reversed="0">
    <text>change</text>
   </edge>
   <edge index1="6" index0="1" arrow-mode="0" reversed="0">
-   <text>invoke 4</text>
+   <text>call 4</text>
   </edge>
   <edge index1="7" index0="1" arrow-mode="0" reversed="0">
-   <text>invoke 5</text>
+   <text>call 5</text>
   </edge>
  </graph>
 </design>

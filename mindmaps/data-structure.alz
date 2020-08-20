@@ -6,83 +6,81 @@
  <text-size>11000</text-size>
  <corner-radius>5000</corner-radius>
  <graph>
-  <node index="0" h="75000" x="-553465" y="-105940" w="200000">
-   <text>Levels object</text>
+  <node index="0" h="75000" x="-294154" y="43715" w="200000">
+   <text>        Levels object</text>
    <color r="170" b="0" g="0"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="1" h="75000" x="-263366" y="-106806" w="200000">
-   <text>Each prop calls:</text>
-   <color r="255" b="255" g="255"/>
-   <text-color r="0" b="0" g="0"/>
-  </node>
-  <node index="2" h="75000" x="-251485" y="-311757" w="200000">
-   <text>getThumb() --> 
+  <node index="1" h="82000" x="-664745" y="43538" w="200000">
+   <text>Prop 1:
+getThumb() --> 
 image node element</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="3" h="75000" x="5940" y="-309777" w="239000">
-   <text>currentSong() --> name
+  <node index="9" h="75000" x="-537213" y="168720" w="200000">
+   <text>   Alternatives array</text>
+   <color r="170" b="0" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="10" h="75000" x="-27926" y="166384" w="273000">
+   <text>Big array with many altrenatives</text>
+   <color r="85" b="255" g="255"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
+  <node index="11" h="82000" x="-654482" y="-128534" w="239000">
+   <text>Prop 2:
+currentSong() --> name
 of the song in node element</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="4" h="75000" x="76237" y="-203836" w="284000">
-   <text>currentLink() --> sets the youtube
+  <node index="13" h="82000" x="-480000" y="-269913" w="284000">
+   <text>Prop 3:
+currentLink() --> sets the youtube
 link for the current song</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="6" h="75000" x="135643" y="-101856" w="237000">
-   <text>currentFile() --> audio node
+  <node index="15" h="82000" x="-154482" y="-270603" w="237000">
+   <text>Prop 4:
+currentFile() --> audio node
 element</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="7" h="75000" x="133663" y="3094" w="235000">
-   <text>currentAnswer --> sets the 
+  <node index="17" h="82000" x="5517" y="-139568" w="235000">
+   <text>Prop 5:
+currentAnswer --> sets the 
 correct alternative</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="8" h="82000" x="84158" y="120915" w="256000">
-   <text>getAlternatives() --> get three
+  <node index="18" h="100000" x="97241" y="42500" w="256000">
+   <text>Prop 6:
+getAlternatives() --> get three
 random alternatives from the
 alternatives array</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="9" h="75000" x="-554455" y="-9900" w="200000">
-   <text>alternatives array</text>
-   <color r="170" b="0" g="0"/>
-   <text-color r="0" b="0" g="0"/>
-  </node>
-  <node index="10" h="75000" x="-269306" y="91212" w="273000">
-   <text>Big array with many altrenatives</text>
-   <color r="85" b="255" g="255"/>
-   <text-color r="0" b="0" g="0"/>
-  </node>
   <edge index1="1" index0="0" arrow-mode="0" reversed="0">
    <text></text>
   </edge>
-  <edge index1="2" index0="1" arrow-mode="0" reversed="0">
-   <text>1</text>
+  <edge index1="11" index0="0" arrow-mode="0" reversed="0">
+   <text></text>
   </edge>
-  <edge index1="3" index0="1" arrow-mode="0" reversed="0">
-   <text>2</text>
+  <edge index1="13" index0="0" arrow-mode="0" reversed="0">
+   <text></text>
   </edge>
-  <edge index1="4" index0="1" arrow-mode="0" reversed="0">
-   <text>3</text>
+  <edge index1="15" index0="0" arrow-mode="0" reversed="0">
+   <text></text>
   </edge>
-  <edge index1="6" index0="1" arrow-mode="0" reversed="0">
-   <text>4</text>
+  <edge index1="17" index0="0" arrow-mode="0" reversed="0">
+   <text></text>
   </edge>
-  <edge index1="7" index0="1" arrow-mode="0" reversed="0">
-   <text>5</text>
-  </edge>
-  <edge index1="8" index0="1" arrow-mode="0" reversed="0">
-   <text>6</text>
+  <edge index1="18" index0="0" arrow-mode="0" reversed="0">
+   <text></text>
   </edge>
   <edge index1="10" index0="9" arrow-mode="0" reversed="0">
    <text></text>
