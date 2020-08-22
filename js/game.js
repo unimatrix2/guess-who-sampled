@@ -365,6 +365,10 @@ function nextLevel() {
             mainRight.style.backgroundColor = 'lightgreen';
             left.innerHTML = '<h1 id="won-text">YOU<br>WON!</h1>';
             mainLeft.innerHTML = '<button id="start-game" onclick="clearUI();rebuildLevels();newGame();">Play Again?</button>';
+            const score = document.createElement('div');
+            score.setAttribute('id', 'hscore');
+            score.innerHTML = `<span id="score-text">High Score: ${bestScore + 1}</span>`;
+            mainLeft.appendChild(score);
             currentGameLives = [];
             bestScore = 0;
         }, 2000);
