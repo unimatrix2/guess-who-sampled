@@ -13,7 +13,7 @@ for more levels</text>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="1" h="75000" x="-322115" y="82692" w="200000">
-   <text>setTimeout()</text>
+   <text>       setTimeout()</text>
    <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
@@ -24,17 +24,17 @@ game interface</text>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="3" h="75000" x="-683653" y="-35576" w="200000">
-   <text>writeAlts()</text>
+   <text>          writeAlts()</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="4" h="75000" x="-674038" y="-178846" w="200000">
-   <text>updateGame()</text>
+   <text>      updateGame()</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="5" h="75000" x="-372168" y="-307823" w="200000">
-   <text>score</text>
+   <text>             Score</text>
    <color r="0" b="255" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
@@ -51,22 +51,22 @@ lives on next level</text>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="9" h="75000" x="-48076" y="-40384" w="200000">
-   <text>clearUI()</text>
+   <text>           clearUI()</text>
    <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="10" h="75000" x="200000" y="-41346" w="200000">
-   <text>display win screen</text>
+   <text>   Display win screen</text>
    <color r="85" b="255" g="0"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="11" h="75000" x="244230" y="83653" w="218000">
-   <text>display play again button</text>
+  <node index="11" h="75000" x="244230" y="83653" w="220000">
+   <text>Display play again button</text>
    <color r="85" b="255" g="0"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="12" h="75000" x="275000" y="198076" w="200000">
-   <text>lives and score</text>
+   <text>Lives and score</text>
    <color r="85" b="255" g="0"/>
    <text-color r="0" b="0" g="0"/>
   </node>

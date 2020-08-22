@@ -13,7 +13,7 @@
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="5" h="75000" x="-633333" y="-305555" w="200000">
-   <text>   wrong alternative</text>
+   <text>   Wrong alternative</text>
    <color r="170" b="127" g="0"/>
    <text-color r="0" b="0" g="0"/>
   </node>
@@ -23,24 +23,24 @@
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="7" h="75000" x="104761" y="-305753" w="200000">
-   <text>removes a life from
+   <text>Removes a life from
 the array</text>
    <color r="255" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="8" h="75000" x="83333" y="-150992" w="255000">
-   <text>checks for game over (if there
+  <node index="8" h="75000" x="83333" y="-150992" w="257000">
+   <text>Checks for game over (if there
 are no lives left)</text>
    <color r="255" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="9" h="75000" x="-243650" y="-115277" w="200000">
-   <text>      advances level</text>
+   <text>      Advances level</text>
    <color r="255" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="10" h="75000" x="84920" y="35515" w="200000">
-   <text>    game over screen</text>
+   <text>    Game over screen</text>
    <color r="170" b="127" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
