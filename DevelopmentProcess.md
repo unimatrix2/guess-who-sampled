@@ -1,6 +1,6 @@
-# Development and Process
+# Documentation and Development Process
 
-Here I will detail how I structured the game, the considerations around it
+Here I will detail how I structured and developed the game, the considerations around it
 and how everything works.
 
 
@@ -15,14 +15,14 @@ template.
 
 ## Data Structure
 
-I made a (questionable) choice to make a data structure that stores the node elements
+I made a (questionable) choice to make a data structure that stores the html elements
 directly inside the properties of an object, mostly because I predicted that it would take many more
-lines of code to manipulate raw data inside the properties intro node elements and add them to the
+lines of code to manipulate raw data inside the properties into html elements and add them to the
 document. The result is a big array with objects that gets manipulated.
 
 ![data-structure 10](images/data-structure.png)
 
-## Start Sequence and level progression
+## Start Sequence and Level Progression
 
 ![start-sequence 10](images/start-sequence.png)
 
@@ -31,7 +31,7 @@ advances levels, the completed or missed level gets removed from the array, so i
 then, how come there is a play again button if the data is gone? There is a function that stores the full array, 
 so when the game is won or lost, the function "resets" the array, bringing back the levels (I will spec this out in the next section). 
 This unfortunate decision was made because of the previous, questionable decision. By not having raw data inside the properties, manipulating the
-objects mutated the properties because they store a function call, so re-setting the array ensured identical node elements.
+array mutated the data inside the properties because they store a function call, so re-setting the array ensured identical html elements.
 
 ![level-progression 10](images/level-progression.png)
 
@@ -50,8 +50,3 @@ separate and independent, so at each user interaction there is one function that
 every other part, but there is no function rabbit hole (function invoking function invoking function and so on), 
 so debugging was a little easier, because bugs are always part-specific, although on the other side of the coin, 
 more attention was required as things would work without necessarily being right.
-
-## Special Thanks to
-
-- My teachers and TAs from Ironhack involved in my learning experience that helped me get this far
-- Jussi Lind for developing [Heimer](https://github.com/juzzlin/Heimer), the Open Source mindmap tool I used to make these docs
