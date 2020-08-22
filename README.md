@@ -35,7 +35,12 @@ it will turn either green or red, and you'll shortly advance levels.
 
 For more technical documentation go [here](DevelopmentProcess.md)
 
-###### Footer
+## Special Thanks to
+
+- My teachers and TAs from Ironhack involved in my learning experience that helped me get this far
+- Jussi Lind for developing [Heimer](https://github.com/juzzlin/Heimer), the Open Source mindmap tool I used to make these docs
+
+#### Footer
 
 Game project developed during the Ironhack WDPT course as
 the first module project.
