@@ -7,8 +7,8 @@
  <corner-radius>5000</corner-radius>
  <graph>
   <node index="0" h="75000" x="-294154" y="43715" w="200000">
-   <text>        Levels object</text>
-   <color r="170" b="0" g="0"/>
+   <text>             Object</text>
+   <color r="170" b="127" g="0"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="1" h="82000" x="-664745" y="43538" w="200000">
@@ -18,17 +18,17 @@ image node element</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="9" h="75000" x="-537213" y="168720" w="200000">
+  <node index="9" h="75000" x="-666303" y="261447" w="200000">
    <text>   Alternatives array</text>
    <color r="170" b="0" g="0"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="10" h="75000" x="-27926" y="166384" w="273000">
+  <node index="10" h="75000" x="112983" y="260929" w="273000">
    <text>Big array with many altrenatives</text>
    <color r="85" b="255" g="255"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="11" h="82000" x="-654482" y="-128534" w="239000">
+  <node index="11" h="82000" x="-654482" y="-128533" w="239000">
    <text>Prop 2:
 currentSong() --> name
 of the song in node element</text>
@@ -64,6 +64,11 @@ alternatives array</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
+  <node index="19" h="75000" x="-294393" y="195227" w="200000">
+   <text>         Levels array</text>
+   <color r="170" b="0" g="0"/>
+   <text-color r="0" b="0" g="0"/>
+  </node>
   <edge index1="1" index0="0" arrow-mode="0" reversed="0">
    <text></text>
   </edge>
@@ -81,6 +86,9 @@ alternatives array</text>
   </edge>
   <edge index1="18" index0="0" arrow-mode="0" reversed="0">
    <text></text>
+  </edge>
+  <edge index1="19" index0="0" arrow-mode="0" reversed="1">
+   <text>each</text>
   </edge>
   <edge index1="10" index0="9" arrow-mode="0" reversed="0">
    <text></text>

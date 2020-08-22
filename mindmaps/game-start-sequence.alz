@@ -7,18 +7,18 @@
  <corner-radius>5000</corner-radius>
  <graph>
   <node index="0" h="75000" x="-976156" y="-75454" w="200000">
-   <text>newGame()</text>
+   <text>          newGame()</text>
    <color r="255" b="127" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="1" h="75000" x="-975716" y="-326334" w="326000">
-   <text>            clearUI() (deleta os elementos e
+  <node index="1" h="75000" x="-975716" y="-326334" w="297000">
+   <text>clearUI() --> (deleta os elementos e
 recoloca os elementos base da UI) </text>
    <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
-  <node index="2" h="75000" x="-498347" y="-74364" w="244000">
-   <text>startGame (display game UI)</text>
+  <node index="2" h="75000" x="-498347" y="-74364" w="256000">
+   <text>startGame() (display game UI)</text>
    <color r="170" b="255" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
@@ -29,7 +29,7 @@ and push them to lives array</text>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="16" h="75000" x="-978141" y="158610" w="200000">
-   <text>Static start screen</text>
+   <text>    Static start screen</text>
    <color r="85" b="255" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>

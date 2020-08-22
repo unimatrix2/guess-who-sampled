@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='UTF-8'?>
-<design version="1.18.0">
+<design version="1.19.0">
  <color r="186" b="182" g="189"/>
  <edge-color r="0" b="0" g="0"/>
  <edge-width>2000</edge-width>
@@ -12,17 +12,17 @@
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="1" h="75000" x="-170588" y="-164950" w="200000">
-   <text>      upper section</text>
+   <text>      Upper section</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="3" h="75000" x="322549" y="-202205" w="200000">
-   <text>        main section</text>
+   <text>        Main section</text>
    <color r="0" b="0" g="170"/>
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="4" h="75000" x="-508823" y="-325735" w="200000">
-   <text>       now playing</text>
+   <text>       Now playing</text>
    <color r="170" b="0" g="0"/>
    <text-color r="0" b="0" g="0"/>
   </node>
@@ -37,7 +37,7 @@
    <text-color r="0" b="0" g="0"/>
   </node>
   <node index="7" h="75000" x="-75490" y="163480" w="200000">
-   <text>    Play/Stop sound</text>
+   <text>          Play sound</text>
    <color r="170" b="0" g="85"/>
    <text-color r="0" b="0" g="0"/>
   </node>
