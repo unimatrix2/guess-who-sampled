@@ -1,6 +1,6 @@
-# Development and Process
+# Documentation and Development Process
 
-Here I will detail how I structured the game, the considerations around it
+Here I will detail how I structured and developed the game, the considerations around it
 and how everything works.
 
 
