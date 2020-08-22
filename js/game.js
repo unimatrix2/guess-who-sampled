@@ -330,6 +330,10 @@ function removeLife() {
             mainRight.style.backgroundColor = 'lightcoral';
             left.innerHTML = '<h1 id="lost-text">YOU<br>LOST!</h1>';
             mainLeft.innerHTML = '<button id="start-game" onclick="clearUI();rebuildLevels();newGame();">Play Again?</button>';
+            const score = document.createElement('div');
+            score.setAttribute('id', 'hscore');
+            score.innerHTML = `<span id="score-text">High Score: ${bestScore}</span>`;
+            mainLeft.appendChild(score);
         }, 2000);
     } else if (currentGameLives[0] !== undefined && levels[0] !== undefined) {
         setTimeout(() => {
@@ -347,6 +351,10 @@ function removeLife() {
             mainRight.style.backgroundColor = 'lightgreen';
             left.innerHTML = '<h1 id="won-text">YOU<br>WON!</h1>';
             mainLeft.innerHTML = '<button id="start-game" onclick="clearUI();rebuildLevels();newGame();">Play Again?</button>';
+            const score = document.createElement('div');
+            score.setAttribute('id', 'hscore');
+            score.innerHTML = `<span id="score-text">High Score: ${bestScore + 1}</span>`;
+            mainLeft.appendChild(score);
             currentGameLives = [];
             bestScore = 0;
         }, 2000);
