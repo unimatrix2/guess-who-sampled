@@ -1,3 +1,7 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-use-before-define */
+/* eslint-disable prefer-const */
+
 const right = document.getElementById('playing-now');
 const left = document.getElementById('yt-link');
 const mainLeft = document.getElementById('left');
@@ -26,7 +30,7 @@ function updateScore() {
 }
 
 function selectLevel(min, max) {
-    return Math.floor(Math.random() * (max - min) ) + min;
+    return Math.floor(Math.random() * (max - min)) + min;
 }
 
 function startGame() {
@@ -46,7 +50,6 @@ function newGame() {
     mainLeft.removeAttribute('style');
     mainRight.removeAttribute('style');
 }
-
 
 startButton.onclick = () => {
     clearUI();
