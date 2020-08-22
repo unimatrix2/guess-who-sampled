@@ -331,12 +331,24 @@ function removeLife() {
             left.innerHTML = '<h1 id="lost-text">YOU<br>LOST!</h1>';
             mainLeft.innerHTML = '<button id="start-game" onclick="clearUI();rebuildLevels();newGame();">Play Again?</button>';
         }, 2000);
-    } else {
+    } else if (currentGameLives[0] !== undefined && levels[0] !== undefined) {
         setTimeout(() => {
             clearUI();
             writeAlts();
             updateGame();
             nextLives();
+        }, 2000);
+    } else if (currentGameLives[0] !== undefined && levels[0] === undefined) {
+        setTimeout(() => {
+            clearUI();
+            left.style.backgroundColor = 'lightgreen';
+            right.style.backgroundColor = 'lightgreen';
+            mainLeft.style.backgroundColor = 'lightgreen';
+            mainRight.style.backgroundColor = 'lightgreen';
+            left.innerHTML = '<h1 id="won-text">YOU<br>WON!</h1>';
+            mainLeft.innerHTML = '<button id="start-game" onclick="clearUI();rebuildLevels();newGame();">Play Again?</button>';
+            currentGameLives = [];
+            bestScore = 0;
         }, 2000);
     }
 }
