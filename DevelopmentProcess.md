@@ -15,14 +15,14 @@ template.
 
 ## Data Structure
 
-I made a (questionable) choice to make a data structure that stores the node elements
+I made a (questionable) choice to make a data structure that stores the html elements
 directly inside the properties of an object, mostly because I predicted that it would take many more
-lines of code to manipulate raw data inside the properties intro node elements and add them to the
+lines of code to manipulate raw data inside the properties into html elements and add them to the
 document. The result is a big array with objects that gets manipulated.
 
 ![data-structure 10](images/data-structure.png)
 
-## Start Sequence and level progression
+## Start Sequence and Level Progression
 
 ![start-sequence 10](images/start-sequence.png)
 
@@ -31,7 +31,7 @@ advances levels, the completed or missed level gets removed from the array, so i
 then, how come there is a play again button if the data is gone? There is a function that stores the full array, 
 so when the game is won or lost, the function "resets" the array, bringing back the levels (I will spec this out in the next section). 
 This unfortunate decision was made because of the previous, questionable decision. By not having raw data inside the properties, manipulating the
-objects mutated the properties because they store a function call, so re-setting the array ensured identical node elements.
+array mutated the data inside the properties because they store a function call, so re-setting the array ensured identical html elements.
 
 ![level-progression 10](images/level-progression.png)
 
