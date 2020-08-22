@@ -38,9 +38,10 @@ For more technical documentation go [here](DevelopmentProcess.md)
 ## Special Thanks to
 
 - My teachers and TAs from Ironhack involved in my learning experience that helped me get this far
-- Jussi Lind for developing [Heimer](https://github.com/juzzlin/Heimer), the Open Source mindmap tool I used to make these docs
+- Jussi Lind for developing [Heimer](https://github.com/juzzlin/Heimer), the Open Source mindmap tool I used to make all
+the mindmaps for the docs
 
-#### Footer
+### Footer
 
 Game project developed during the Ironhack WDPT course as
 the first module project.
